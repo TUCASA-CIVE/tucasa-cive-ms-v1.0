@@ -1,18 +1,15 @@
-import AboutSection from "./components/AboutSection"
-import Footer from "./components/Footer"
-import HeroSection from "./components/HeroSection"
-import NavbarComponents from "./components/NavbarComponents"
-import TeamSection from "./components/TeamSection"
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home"
+import Login from "./Pages/login"
 
 function App() {
 
   return (
     <div>
-      <NavbarComponents />
-      <HeroSection />
-      <AboutSection />
-      <TeamSection />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </div>
   )
 }

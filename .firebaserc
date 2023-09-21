@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "tucasa-cive"
+  },
+  "hosting":{
+    "site": "tucasa-cive-d293b"
+  }
+}

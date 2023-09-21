@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Navbar,
   MobileNav,
@@ -74,7 +75,7 @@ export default function NavbarComponents() {
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-          <span> Sign in </span>
+          <a href="/login" > Sign in </a>
         </Button>
         <IconButton
           variant="text"
@@ -115,11 +116,11 @@ export default function NavbarComponents() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-        <div className="container mx-auto">
+        <div className="container mx-auto ">
           {navList}
-          <Button variant="gradient" size="sm" fullWidth className="mb-2">
+          <Link to="/login" variant="gradient" size="sm" fullWidth className="mb-2 w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg px-4 py-2  ">
             <span> Sign in </span>
-          </Button>
+          </Link>
         </div>
       </MobileNav>
     </Navbar>

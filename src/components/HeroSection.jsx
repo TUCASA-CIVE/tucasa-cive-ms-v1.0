@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className=' flex flex-col md:flex-row mt-3 md:py-10  ' >
         <div className=' mx-2 md:w-1/2  '>
             <img
-                className="h-96 w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
+                className="h-[400px] w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
                 src='hero.jpg'
                 alt="nature image"
                 />
