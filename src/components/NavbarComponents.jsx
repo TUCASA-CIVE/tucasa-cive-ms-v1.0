@@ -74,9 +74,9 @@ export default function NavbarComponents() {
           TUCASA CIVE
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="sm" className="hidden lg:inline-block">
+        <Link to='/login' variant="gradient" size="sm" className="hidden lg:inline-block mb-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-lg px-4 py-2 ">
           <a href="/login" > Sign in </a>
-        </Button>
+        </Link>
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -118,7 +118,7 @@ export default function NavbarComponents() {
       <MobileNav open={openNav}>
         <div className="container mx-auto ">
           {navList}
-          <Link to="/login" variant="gradient" size="sm" fullWidth className="mb-2 w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg px-4 py-2  ">
+          <Link to="/login" variant="gradient" size="sm" fullWidth className="mb-2 w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg px-4 py-2">
             <span> Sign in </span>
           </Link>
         </div>

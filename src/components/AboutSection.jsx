@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Button } from '@material-tailwind/react';
+import { Link } from 'react-router-dom';
 
 export default function AboutSection() {
   return (
@@ -13,9 +14,9 @@ export default function AboutSection() {
                 videos, engaging podcasts, and an extensive library of books to help students achive their goals. Join us in our mission to create a brighter future
                 for all students
             </Typography>
-            <a href="" className=' mt-2'>
+            <Link to="/register" className=' mt-2'>
                 <Button color='white' ripple={true} > Join us </Button>
-            </a>
+            </Link>
         </div>
 
         <div className=' mx-2 md:mx-0 md:w-1/2 hidden md:block  '>
